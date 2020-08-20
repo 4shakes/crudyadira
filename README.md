@@ -7,23 +7,18 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-- git clone https://github.com/usr/repo.git
-- cd repo
-composer install
-cp .env.example .env
-php artisan key:generate
-Edit / Editar .env
-    - Set database connection details / Ajustar detalles de conexión de base de datos
-    - Set other configs / Ajustar otras configuraciones (mail, api's, etc.)
-php artisan migrate
-(optional / opcional) php artisan migrate --database=testing_connection
-(optional / opcional) npm install && gulp
+- Se debe tener instalado laragon en el equipo
+- git clone https://github.com/4shakes/crudyadira.git
+- cd crudyadira
+- composer install
+- copiar .env.example y le quitamos el .example para que quede solo .env
+- generamos la key por medio del comando php artisan key:generate
+- Se edita el archivo .env y dentro
+    - Ajustar detalles de conexión de base de datos 
+- realizamos las migraciones con el comando php artisan migrate
+- tras terminar de realizar todos los comandos para finalizar utilizaremos el comando npm install para el funcionamiento de vue
+- para correr el proyecto iniciamos laragon y el comando npm run dev
 
-
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
 
 ## License
